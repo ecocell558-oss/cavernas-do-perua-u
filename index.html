@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Para Cavernas do Peruaçu | Turismo e Ecoturismo Oficial</title>
+    <meta name="description" content="Guia profissional para visitas às cavernas do Parque Nacional Cavernas do Peruaçu, Patrimônio Mundial Natural da UNESCO. Informações oficiais, roteiros e segurança.">
+    
+    <!-- FAVICON (Logo na aba do navegador) -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset e Variáveis */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2a5c4a; /* Verde escuro floresta */
+            --primary-light: #e8f0ec;
+            --secondary: #c49a6c; /* Tom terroso/areia */
+            --accent: #8c6b4a;
+            --text-dark: #1f2e2a;
+            --text-muted: #4a5b55;
+            --bg-light: #f9fbfa;
+            --white: #ffffff;
+            --shadow-sm: 0 4px 12px rgba(0,0,0,0.05);
+            --shadow-md: 0 10px 25px rgba(0,0,0,0.08);
+            --radius: 12px;
+            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Merriweather', serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Tipografia */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--primary);
+        }
+
+        h1 { font-size: 2.8rem; }
+        h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
+        h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+
+        .subtitle {
+            font-family: var(--font-sans);
+            font-weight: 400;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 12px;
+            margin-bottom: 1rem;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+            box-shadow: 0 4px 10px rgba(42, 92, 74, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: #1e4537;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(42, 92, 74, 0.4);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+
+        .btn-secondary:hover {
+            background-color: #b58a5a;
+            transform: translateY(-2px);
+        }
+
+        /* Header / Navbar */
+        .navbar {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 12px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* ESTILO ATUALIZADO PARA A LOGO DO CABEÇALHO */
+        .logo-img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain; /* Garante que a imagem não distorça */
+        }
+
+        .logo-text {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            display: block;
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-cta {
+            margin-left: 16px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.8rem;
+            color: var(--primary);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            /* IMAGEM DE FUNDO ALTERADA AQUI */
+            background: linear-gradient(rgba(20, 40, 35, 0.65), rgba(20, 40, 35, 0.65)), url('inicio2.jpeg') center/cover no-repeat;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 80px 0;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 0 24px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.15);
+            backdrop-filter: blur(4px);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .hero h1 {
+            color: var(--white);
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 32px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Credibilidade / Stats */
+        .stats-bar {
+            background-color: var(--white);
+            box-shadow: var(--shadow-md);
+            border-radius: var(--radius);
+            padding: 32px 40px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-top: -60px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stat-item {
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .stat-number {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Seções Gerais */
+        section {
+            padding: 80px 0;
+        }
+
+        /* Sobre */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text h2::after {
+            left: 0;
+            transform: none;
+        }
+
+        .about-text p {
+            margin-bottom: 1.2rem;
+            color: var(--text-muted);
+        }
+
+        .about-highlight {
+            background: var(--primary-light);
+            border-left: 5px solid var(--primary);
+            padding: 20px 24px;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            margin-top: 24px;
+        }
+
+        .about-highlight p {
+            margin-bottom: 0;
+            font-style: italic;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .about-image {
+            background: url('inicio.jpeg') center/cover;
+            height: 450px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Atrativos / Cards */
+        .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .attraction-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .attraction-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-img {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .card-tag {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: var(--white);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card-content {
+            padding: 24px;
+        }
+
+        .card-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .card-meta {
+            display: flex;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .card-meta i {
+            color: var(--secondary);
+            margin-right: 4px;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-link {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .card-link:hover {
+            gap: 10px;
+        }
+
+        /* Informações / Tabela */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .info-box {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 32px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .info-box h3 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .info-box h3 i {
+            color: var(--secondary);
+        }
+
+        .info-list li {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .info-list li i {
+            color: var(--primary);
+            margin-top: 4px;
+            min-width: 18px;
+        }
+
+        .info-list strong {
+            color: var(--text-dark);
+        }
+
+        /* Como Chegar */
+        .map-container {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 32px;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .map-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .map-text h3 {
+            margin-bottom: 16px;
+        }
+
+        .map-text p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .address-block {
+            background: var(--primary-light);
+            padding: 20px;
+            border-radius: var(--radius);
+            margin-top: 20px;
+        }
+
+        .address-block p {
+            margin-bottom: 8px;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .address-block i {
+            color: var(--primary);
+            margin-right: 8px;
+        }
+
+        .map-visual {
+            flex: 1;
+            min-width: 300px;
+            height: 250px;
+            background: #e0e8e4;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 20px;
+            border: 1px dashed var(--primary);
+        }
+
+        /* CTA Final */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, #1e4537 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-section p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .cta-section .btn-primary {
+            background: var(--white);
+            color: var(--primary);
+        }
+
+        .cta-section .btn-primary:hover {
+            background: #f0f0f0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #11221c;
+            color: #b0c4bb;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo p {
+            margin-top: 16px;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #8fa89d;
+        }
+
+        .footer-logo .logo-text {
+            color: var(--white);
+        }
+
+        .footer-logo .logo-icon {
+            background: rgba(255,255,255,0.1);
+            color: var(--secondary);
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-family: var(--font-sans);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--secondary);
+        }
+
+        .footer-col ul li i {
+            margin-right: 8px;
+            color: var(--secondary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2a3e36;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: #7e968b;
+        }
+
+        .footer-bottom a {
+            color: #b0c4bb;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--white);
+        }
+
+        /* Responsividade */
+        @media (max-width: 992px) {
+            h1 { font-size: 2.5rem; }
+            .hero h1 { font-size: 2.8rem; }
+            .about-grid { grid-template-columns: 1fr; gap: 40px; }
+            .about-image { height: 350px; order: -1; }
+            .info-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .stats-bar { padding: 24px; }
+            .stat-item { min-width: 120px; }
+            .stat-number { font-size: 1.8rem; }
+            .section-title h2 { font-size: 1.8rem; }
+            .map-container { flex-direction: column; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <!-- LOGO DO CABEÇALHO ATUALIZADA -->
+                <img src="logo.png" alt="Logo Guia Peruaçu" class="logo-img">
+                <div class="logo-text">
+                    Guias para o Peruaçu
+                    <span>Cavernas do Peruaçu</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#atrativos">Atrativos</a>
+                <a href="#informacoes">Informações</a>
+                <a href="#como-chegar">Como Chegar</a>
+            </nav>
+            <!-- Botão do Menu apontando para o seu WhatsApp -->
+            <a href="https://wa.me/5538991307687" target="_blank" class="btn btn-primary nav-cta">Contratar Guia</a>
+            <button class="mobile-menu-btn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-award"></i> Patrimônio Mundial Natural da UNESCO</div>
+            <h1>Descubra as Cavernas do Peruaçu</h1>
+            <p>Vivencie a grandiosidade do maior conjunto de cavernas do Brasil. Contrate um guia para uma experiência segura, informativa e inesquecível no coração do Cerrado mineiro.</p>
+            <div class="hero-buttons">
+                <!-- Botão apontando para o seu WhatsApp -->
+                <a href="https://wa.me/5538991307687" target="_blank" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Contratar Guia</a>
+                <a href="#atrativos" class="btn btn-outline" style="color: white; border-color: white;"><i class="fas fa-compass"></i> Explorar Atrativos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="container">
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number">+160</div>
+                <div class="stat-label">Cavernas Catalogadas</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">28m</div>
+                <div class="stat-label">Maior Estalactite do Mundo</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">12.000</div>
+                <div class="stat-label">Anos de História Rupestre</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">9</div>
+                <div class="stat-label">Roteiros Oficiais Abertos</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre -->
+    <section id="sobre" class="container">
+        <div class="about-grid">
+            <div class="about-text">
+                <div class="section-title" style="text-align: left; margin-bottom: 1rem;">
+                    <h2>Um Tesouro Mundial no Norte de Minas</h2>
+                </div>
+                <p>O <strong>Parque Nacional Cavernas do Peruaçu</strong>, localizado entre os municípios de Januária, Itacarambi e São João das Missões, é o primeiro sítio de Minas Gerais a receber o título de <strong>Patrimônio Mundial Natural da UNESCO</strong> (2025). Com uma área de mais de 56 mil hectares, o parque protege um dos mais importantes acervos espeleológicos e arqueológicos do planeta.</p>
+                <p>O vale do rio Peruaçu esculpiu, ao longo de milhões de anos, cânions monumentais e cavernas com salões que ultrapassam 100 metros de altura. Aqui, a história humana se entrelaça com a geologia: são mais de 80 sítios arqueológicos com pinturas rupestres datadas de até 12 mil anos, além de fósseis da megafauna pleistocênica.</p>
+                <p><strong>A visitação é rigorosamente controlada.</strong> Para garantir a preservação deste patrimônio e a segurança dos visitantes, o ICMBio exige a contratação de guias locais credenciados.</p>
+                <div class="about-highlight">
+                    <p><i class="fas fa-quote-left" style="margin-right: 8px; opacity: 0.6;"></i>É uma junção dos atributos físicos, que são as cavernas, a parte da história que envolve a arqueologia, mas também os vários povos que habitam aqui. — Dayanne Sirqueira, chefe do Núcleo de Gestão Integrada Peruaçu (ICMBio) </p>
+                </div>
+            </div>
+            <div class="about-image" role="img" aria-label="Paisagem de cânion com vegetação de cerrado"></div>
+        </div>
+    </section>
+
+    <!-- Atrativos -->
+    <section id="atrativos" style="background-color: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Principais Atrativos</h2>
+                <p class="subtitle">Roteiros oficiais disponíveis para visitação com guias credenciados. Todos os percursos exigem agendamento prévio.</p>
+            </div>
+            <div class="attractions-grid">
+                <!-- Card 1 -->
+                <div class="attraction-card">
+                    <div class="card-img" style="background-image: url('janelão.jpg');">
+                        <span class="card-tag">Imperdível</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Gruta do Janelão</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-walking"></i> 4,8 km (ida e volta)</span>
+                            <span><i class="fas fa-clock"></i> ~5h30</span>
+                            <span><i class="fas fa-signal"></i> Médio</span>
+                        </div>
+                        <p>O cartão-postal do parque. Seus salões têm até 100 metros de altura e são iluminados por claraboias naturais. Abriga a "Perna da Bailarina", a maior estalactite do mundo com 28 metros, e importantes pinturas rupestres.</p>
+                        <!-- Link do card apontando para o seu WhatsApp -->
+                        <a href="https://wa.me/5538991307687" target="_blank" class="card-link">Agendar com guia <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="attraction-card">
+                    <div class="card-img" style="background-image: url('desenhos.jpg');">
+                        <span class="card-tag">Arqueologia</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lapa dos Desenhos</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-walking"></i> 2,6 km (ida e volta)</span>
+                            <span><i class="fas fa-clock"></i> ~2h20</span>
+                            <span><i class="fas fa-signal"></i> Leve</span>
+                        </div>
+                        <p>Concentra uma das maiores coleções de pinturas rupestres do mundo, com mais de 3.000 registros em painéis que chegam a 15 metros de altura. A trilha margeia o rio Peruaçu e a mata de galeria.</p>
+                        <!-- Link do card apontando para o seu WhatsApp -->
+                        <a href="https://wa.me/5538991307687" target="_blank" class="card-link">Agendar com guia <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="attraction-card">
+                    <div class="card-img" style="background-image: url('bonita.jpeg');">
+                        <span class="card-tag">Geologia</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lapa Bonita</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-walking"></i> 1,5 km (ida e volta)</span>
+                            <span><i class="fas fa-clock"></i> ~2h20</span>
+                            <span><i class="fas fa-signal"></i> Leve</span>
+                        </div>
+                        <p>Caverna totalmente escura com passarelas e rica ornamentação espeleológica. Destaca-se o "Salão Vermelho", coberto por sedimentos avermelhados, além de estalactites e estalagmites.</p>
+                        <!-- Link do card apontando para o seu WhatsApp -->
+                        <a href="https://wa.me/5538991307687" target="_blank" class="card-link">Agendar com guia <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="attraction-card">
+                    <div class="card-img" style="background-image: url('arco.jpeg');">
+                        <span class="card-tag">Aventura</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Trilha do Arco do André</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-walking"></i> ~8 km</span>
+                            <span><i class="fas fa-clock"></i> ~7h</span>
+                            <span><i class="fas fa-signal"></i> Desafiador</span>
+                        </div>
+                        <p>Para aventureiros com bom condicionamento físico. Passa por mirantes espetaculares como o das Cinco Torres e por cavernas onde o rio Peruaçu forma espelhos d'água esmeralda.</p>
+                        <!-- Link do card apontando para o seu WhatsApp -->
+                        <a href="https://wa.me/5538991307687" target="_blank" class="card-link">Agendar com guia <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="attraction-card">
+                    <div class="card-img" style="background-image: url('boquete.jpg');">
+                        <span class="card-tag">História</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lapa do Boquete</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-walking"></i> 1,2 km (ida e volta)</span>
+                            <span><i class="fas fa-clock"></i> ~1h30</span>
+                            <span><i class="fas fa-signal"></i> Leve</span>
+                        </div>
+                        <p>Um dos sítios arqueológicos mais estudados do Brasil. Abriga evidências de sepultamentos pré-históricos com mais de 7.000 anos e um silo de armazenamento de alimentos.</p>
+                        <!-- Link do card apontando para o seu WhatsApp -->
+                        <a href="https://wa.me/5538991307687" target="_blank" class="card-link">Agendar com guia <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="attraction-card">
+                    <div class="card-img" style="background-image: url('rezar.png');">
+                        <span class="card-tag">Esforço</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lapa do Rezar</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-walking"></i> 2,4 km (ida e volta)</span>
+                            <span><i class="fas fa-clock"></i> ~3h30</span>
+                            <span><i class="fas fa-signal"></i> Médio/Alto</span>
+                        </div>
+                        <p>Com mais de 500 degraus, recompensa com um salão de entrada de 90m x 40m e pinturas rupestres conservadas. No passado, era utilizada por romeiros da região para orações.</p>
+                        <!-- Link do card apontando para o seu WhatsApp -->
+                        <a href="https://wa.me/5538991307687" target="_blank" class="card-link">Agendar com guia <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informações Importantes -->
+    <section id="informacoes">
+        <div class="container">
+            <div class="section-title">
+                <h2>Informações para sua Visita</h2>
+                <p class="subtitle">Planeje-se com antecedência. A capacidade de visitação é limitada e o agendamento é obrigatório.</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3><i class="fas fa-calendar-check"></i> Agendamento e Ingressos</h3>
+                    <ul class="info-list">
+                        <li><i class="fas fa-check-circle"></i> <div><strong>Entrada:</strong> Gratuita, porém é obrigatório o agendamento prévio e a contratação de um guia credenciado.</div></li>
+                        <li><i class="fas fa-check-circle"></i> <div><strong>Agendamento:</strong> Deve ser feito com antecedência, especialmente na alta temporada (seca, de maio a outubro).</div></li>
+                        <li><i class="fas fa-check-circle"></i> <div><strong>Pagamento:</strong> A negociação de valores e horários é feita diretamente com o guia condutor.</div></li>
+                        <li><i class="fas fa-check-circle"></i> <div><strong>Acesso:</strong> É necessário veículo próprio ou alugado para se locomover entre a sede e os atrativos.</div></li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <h3><i class="fas fa-hiking"></i> Recomendações e Segurança</h3>
+                    <ul class="info-list">
+                        <li><i class="fas fa-check-circle"></i> <div><strong>Vestuário:</strong> Use roupas leves, confortáveis e calçados fechados com boa aderência (tênis de trilha).</div></li>
+                        <li><i class="fas fa-check-circle"></i> <div><strong>Itens essenciais:</strong> Leve água, protetor solar, repelente, chapéu e lanches (não há lanchonetes nos roteiros).</div></li>
+                        <li><i class="fas fa-check-circle"></i> <div><strong>Clima:</strong> Verifique as condições climáticas. A estação chuvosa (novembro a abril) pode fechar trilhas e o rio pode subir.</div></li>
+                        <li><i class="fas fa-check-circle"></i> <div><strong>Preservação:</strong> Não toque nas formações rochosas, não faça barulho excessivo e não deixe lixo. "De uma caverna nada se tira, a não ser foto!" .</div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Chegar -->
+    <section id="como-chegar" style="background-color: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Como Chegar</h2>
+                <p class="subtitle">A sede do parque está localizada na comunidade do Fabião I, às margens da BR-135.</p>
+            </div>
+            <div class="map-container">
+                <div class="map-text">
+                    <h3>Localização e Acesso</h3>
+                    <p>O Parque Nacional Cavernas do Peruaçu fica no Norte de Minas Gerais. O aeroporto mais próximo é o de <strong>Montes Claros (MOC)</strong>, a cerca de 200 km da entrada do parque. De lá, é necessário alugar um carro ou contratar transporte até as cidades de Januária ou Itacarambi.</p>
+                    <div class="address-block">
+                        <p><i class="fas fa-map-pin"></i> <strong>Sede do Parque:</strong> BR-135, km 155, Comunidade do Fabião I, Januária - MG</p>
+                        <p><i class="fas fa-location-arrow"></i> <strong>Coordenadas:</strong> Lat. -15.172464° / Long. -44.191932°</p>
+                        <p><i class="fas fa-car"></i> <strong>Distâncias:</strong> Januária (45 km) | Montes Claros (200 km) | Belo Horizonte (480-660 km, dependendo do trajeto)</p>
+                    </div>
+                </div>
+                <div class="map-visual">
+                    <div>
+                        <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--primary); margin-bottom: 12px;"></i>
+                        <p>Consulte o mapa oficial no site do ICMBio para planejar sua rota com precisão.</p>
+                        <a href="https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/cerrado/lista-de-ucs/parna-cavernas-do-peruacu" target="_blank" class="btn btn-outline" style="margin-top: 12px; font-size: 0.85rem;">Acessar Site Oficial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Pronto para Vivenciar o Peruaçu?</h2>
+            <p>Agende sua visita e prepare-se para explorar um dos lugares mais impressionantes e bem preservados do Brasil com toda a segurança.</p>
+            <!-- Botão apontando para o seu WhatsApp -->
+            <a href="https://wa.me/5538991307687" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Contratar Guia Agora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <!-- LOGO DO RODAPÉ ATUALIZADA -->
+                        <img src="logo.png" alt="Logo Guia Peruaçu" class="logo-img" style="filter: brightness(0) invert(1);">
+                        <div class="logo-text">
+                            Guias Peruaçu
+                            <span>Cavernas do Peruaçu</span>
+                        </div>
+                    </div>
+                    <p>Site informativo e de conexão para visitas ao parque. Todas as informações sobre o parque são baseadas em fontes oficiais (ICMBio) e notícias públicas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre o Parque</a></li>
+                        <li><a href="#atrativos">Atrativos</a></li>
+                        <li><a href="#informacoes">Informações</a></li>
+                        <li><a href="#como-chegar">Como Chegar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Oficiais</h4>
+                    <ul>
+                        <li><a href="https://www.gov.br/icmbio/pt-br" target="_blank"><i class="fas fa-external-link-alt"></i> ICMBio</a></li>
+                        <li><a href="https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/cerrado/lista-de-ucs/parna-cavernas-do-peruacu" target="_blank"><i class="fas fa-external-link-alt"></i> Parna Cavernas do Peruaçu</a></li>
+                        <li><a href="https://www.unesco.org" target="_blank"><i class="fas fa-external-link-alt"></i> UNESCO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fab fa-whatsapp"></i> (38) 99130-7687</li>
+                        <li><i class="fas fa-envelope"></i> cavernas.peruacu@icmbio.gov.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> BR-135, km 155, Fabião I, Januária - MG</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Guia Para Cavernas do Peruaçu. Todos os direitos reservados.</p>
+                <p>Desenvolvido para fins de divulgação do turismo sustentável e ecoturismo na região.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script simples para suavizar scroll (opcional) -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
